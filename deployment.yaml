@@ -59,8 +59,8 @@ spec:
     spec:
       containers:
       - name: users
-        image: users-service:v1
-        imagePullPolicy: Never
+        image: roostergr/users-service:v1
+        imagePullPolicy: IfNotPresent
         env:
         - name: DB_HOST
           value: users-db
